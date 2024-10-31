@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <title>Contacto</title>   
+</head>
+<body>
+    <nav class="navbar">
+        <a href="Index.html" class="logo">
+            <img src="imag/Logo.png" alt="Plot Films Logo" loading="lazy">
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <table class="nav-table">
+            <tr>
+                <td><a href="Acerca.html">Sobre Nosotros</a></td>
+                <td>
+                    <a href="Galeria.html">Proyectos</a>
+                    <div class="sub-menu">
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="Proyecto1.html">Proyecto 1</a>
+                                    <div class="sub-menu">
+                                        <table>
+                                            <tr><td><a href="Subproyecto1.html">Subproyecto 1.1</a></td></tr>
+                                            <tr><td><a href="Subproyecto2.html">Subproyecto 1.2</a></td></tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><td><a href="Proyecto2.html">Proyecto 2</a></td></tr>
+                        </table>
+                    </div>
+                </td>
+                <td><a href="Contacto.html">Contacto</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <nav class="top-navbar">
+        <a href="Index.html" class="logo">
+            <img src="imag/Logo.png" alt="Plot Films Logo" loading="lazy">
+        </a>
+        <table class="nav-table">
+            <tr>
+                <td><a href="Acerca.html">Sobre Nosotros</a></td>
+                <td>
+                    <a href="Galeria.html">Proyectos</a>
+                    <div class="sub-menu">
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="Proyecto1.html">Proyecto 1</a>
+                                    <div class="sub-menu">
+                                        <table>
+                                            <tr><td><a href="Subproyecto1.html">Subproyecto 1.1</a></td></tr>
+                                            <tr><td><a href="Subproyecto2.html">Subproyecto 1.2</a></td></tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><td><a href="Proyecto2.html">Proyecto 2</a></td></tr>
+                        </table>
+                    </div>
+                </td>
+                <td><a href="Contacto.html">Contacto</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <h1>Contacto</h1>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Información de Plot Films</h2>
+            <div class="info">
+                <p><i class="fas fa-phone"></i> Teléfono: 78055249</p>
+                <p><i class="fab fa-whatsapp"></i> Correo: plotfilmssv@gmail.com</p>
+                <p>Ubicación: Residencial Miraflores, sendas Las Gladiolas #4</p>
+                <p>Horarios de atención:</p>
+                <ul>
+                    <li>Lunes a viernes: 8 a.m. – 5 p.m.</li>
+                    <li>Sábados: 8 a.m. – 12 m.d.</li>
+                </ul>
+            </div>
+            <p class="Significado">Si deseas enviar algún mensaje, opiniones o necesitas recibir una asesoría completa sobre como hacemos las cosas, puedes dirigirnos un correo directamente, 
+            Para nosotros será un placer atenderte.</p>
+            <div class="empty-space"></div>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Información</h2>
+        <form id="infoForm">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required pattern=".+@gmail\.com" placeholder="ejemplo@gmail.com">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required pattern="\d{4}-\d{4}" placeholder="1234-5678">
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required placeholder="Ingrese sus nombres">
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required placeholder="Ingrese sus apellidos">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <hr>
+        <div class="footer-content">
+            <div class="footer-buttons">
+                <a href="https://www.instagram.com/plotfilms_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="footer-button">
+                    <i class="fab fa-instagram fa-2x"></i> <!-- Añadido icono de Instagram con tamaño -->
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 Plot Films. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
+
+
