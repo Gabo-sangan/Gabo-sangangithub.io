@@ -1,0 +1,106 @@
+body {
+    background-color: #1a1a1a;
+    color: #f5c518;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #f5c518;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.mission-vision-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.mission, .vision {
+    background-color: #222;
+    border: 2px solid #f5c518;
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.mission:hover, .vision:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #f5c518;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .mission-vision-container {
+        flex-direction: column;
+    }
+
+    .mission, .vision {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .mission-vision-container {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 901px) {
+    .mission-vision-container {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}

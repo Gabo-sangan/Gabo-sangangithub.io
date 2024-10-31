@@ -1,0 +1,72 @@
+body {
+    background-color: #1a1a1a;
+    color: #f5c518;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #f5c518;
+    margin-top: 20px;
+}
+
+.carousel-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    animation: slide 12s infinite;
+}
+
+.carousel-images {
+    display: flex;
+    width: 300%;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #555;
+}
+

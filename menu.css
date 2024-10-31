@@ -1,0 +1,117 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.7rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.7rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img,
+.top-navbar .logo img {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.nav-table {
+    display: flex;
+    list-style: none;
+    margin-top: 0.3rem;
+}
+
+.nav-table td {
+    padding: 0 1rem;
+    position: relative;
+}
+
+.nav-table a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.5s ease;
+}
+
+.nav-table a:hover {
+    background-color: yellow;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.nav-table td:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.sub-menu td:hover > .sub-menu {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-table {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-table td {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-toggle:checked ~ .nav-table {
+        display: flex;
+    }
+}

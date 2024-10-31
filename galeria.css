@@ -1,0 +1,82 @@
+bbody {
+    background-color: #1a1a1a;
+    color: #f5c518;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0; 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 90%; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.gallery img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+@media (max-width: 600px) {
+    .video-container iframe {
+        width: 100%;
+        height: auto; 
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .video-container iframe {
+        width: 80%; 
+        height: auto; 
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 901px) {
+    .video-container iframe {
+        width: 70%; 
+        height: auto; 
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
